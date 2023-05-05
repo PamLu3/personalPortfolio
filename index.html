@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pam Portfolio</title>
+    <!-- import Nunito font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
+
 <body>
     <nav class="navBar">
-        <!-- slide-out navigation   -->
-        <button>pl.</button>  
-        <!-- unfinished slide-out navigation -->
-
+        <div>
+            <img src="https://api.logo.com/api/v2/images?logo=logo_218432c5-4161-43a2-985c-2cd51c6a8a18&format=webp&margins=0&quality=60&width=80&background=transparent&u=1682821708"
+                alt="logo for Pam Lu">
+        </div>
         <!-- SEARCH MENU IN NAV -->
         <ul class="searchMenu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#aboutMe">About</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#home">home</a></li>
+            <li><a href="#aboutMe">about</a></li>
+            <li><a href="#projects">projects</a></li>
             <li class="button"><a href="#contact">get in touch</a></li>
         </ul>
     </nav>
-    <header id="home">
+    <header id="home" class="wrapper">
         <!-- HEADING  -->
-        <div class="headerContent wrapper">            
+        <div class="headerContent">
             <h1>Pam Lu</h1>
-            <p>Toronto based web developer</p>            
+            <p>Toronto based web developer</p>
         </div>
-        <div class="headerImgContainer wrapper">
+        <div class="headerImgContainer">
             <img src="./assets/image1.jpg" alt="Pam Lu sitting on bench facing to Lake Ontario">
         </div>
     </header>
@@ -34,29 +41,45 @@
         <section class="aboutMe" id="aboutMe">
             <!-- ABOUT ME SECTION -->
             <div class="wrapper">
-                <h2>about me</h2>
-                <p>Paragraph text about me Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora assumenda laborum, minima nostrum, esse quae aspernatur architecto cum molestias totam incidunt quos doloremque autem deleniti perspiciatis nemo quidem maxime a.</p>
+                <div class="aboutMeImgContainer">
+                    <img src="./assets/image2.jpg" alt="Pam Lu in zoom meeting">
+                </div>
+                <div class="aboutMeContent">
+                    <h2>about me</h2>
+                    <p>Paragraph text about me Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                        assumenda
+                        laborum, minima nostrum, esse quae aspernatur architecto cum molestias totam incidunt quos
+                        doloremque autem deleniti perspiciatis nemo quidem maxime a.</p>
+                </div>
             </div>
         </section>
         <section class="skills">
             <!-- SKILLS SECTION -->
             <div class="wrapper">
-                <h2>skills</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, iure. Asperiores, sunt.</p>
-                <ul class="skillsList">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Sass</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>Firebase</li>
-                    <li>Git and GitHub</li>
-                    <li>Netlify</li>
-                    <li>Using REST APIs with AJAX</li>
-                    <li>Web accessibility</li>
-                    <li>Paired programming</li>
-                    <li>Project management</li>
-                </ul>
+                <div class="skillsHeading">
+                    <h2>skills</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, iure. Asperiores, sunt.</p>
+                </div>
+                <div class="skillsList">
+                    <ul class="group1">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Sass</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <ul class="group2">
+                        <li>React</li>
+                        <li>Firebase</li>
+                        <li>Git and GitHub</li>
+                        <li>Netlify</li>
+                    </ul>
+                    <ul class="group3">
+                        <li>Using REST APIs with AJAX</li>
+                        <li>Web accessibility</li>
+                        <li>Paired programming</li>
+                        <li>Project management</li>
+                    </ul>
+                </div>
             </div>
         </section>
         <section class="projects" id="projects">
@@ -65,28 +88,45 @@
                 <h2>projects</h2>
                 <div class="project projectOne">
                     <div class="projectImageContainer">
-                        <img src="./assets/SOPHIE.png" alt="">
+                        <img src="./assets/SOPHIE.png" alt="SOPHIE">
                     </div>
                     <div class="projectTextContainer">
                         <h3>SOPHIE</h3>
                         <h4>HTML, CSS</h4>
                         <p>information about SOPHIE</p>
+                        <div>
+                            <a href="https://sophiepamlu.netlify.app" target="_blank" class="button">view live</a>
+                            <a href="https://github.com/PamLu3/PamLuProjectOneSophie" class="button">view code</a>
+                        </div>
                     </div>
                 </div>
                 <div class="project projectTwo">
                     <div class="projectImageContainer">
-                        <img src="./assets/pickiEats.png" alt="">
+                        <img src="./assets/pickiEats.png" alt="PickiEats">
                     </div>
                     <div class="projectTextContainer">
                         <h3>PickiEats</h3>
                         <h4>HTML, CSS, JavaScript</h4>
                         <p>information about pickiEats</p>
+                        <div>
+                            <a href="https://pickieats.netlify.app" target="_blank" class="button">view live</a>
+                            <a href="https://github.com/group9APIProject/pickiEats" class="button">view code</a>
+                        </div>
                     </div>
                 </div>
-                <!-- LEAVING THE SPACE FOR PROJECT 3 -->
                 <div class="project projectThree">
-                    <div class="projectImageContainer"></div>
-                    <div class="projectTextContainer"></div>
+                    <div class="projectImageContainer">
+                        <img src="./assets/PaintGallery.png" alt="Paint Gallery">
+                    </div>
+                    <div class="projectTextContainer">
+                        <h3>Paint Gallery</h3>
+                        <h4>HTML, CSS</h4>
+                        <p>information about Paint Gallery</p>
+                        <div>
+                            <a href="https://paintgallery.netlify.app/" target="_blank" class="button">view live</a>
+                            <a href="https://github.com/PamLu3/assignment1" class="button">view code</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -95,19 +135,30 @@
             <div class="wrapper">
                 <div class="contactText">
                     <h2>get in touch</h2>
-                    <p>please keep in touch</p>
-                    <div class="icon"></div>
+                    <p>You can easily reach me by email or on LinkedIn and Tweete as following link.</p>
+                    <ul class="iconContainer">
+                        <li><a href="https://www.linkedin.com/in/pam-lu-84815239/"><img src="./assets/LinkedIn.png" alt="LinkedIn"></a></li>
+                        <li><a href="https://github.com/PamLu3"><img src="./assets/GitHub.png" alt="GitHub"></a></li>
+                        <li><a href="https://twitter.com/PamLu20"><img src="./assets/Twitter.png" alt="Twitter"></a></li>
+                        <li><a href="mailto:pam_lumin@yahoo.ca"><img src="./assets/Mail.png" alt="Email"></a></li>
+                    </ul>
                 </div>
                 <!-- CONTACT FORM  -->
-                <form action="" method="" class="contactForm" name="contactForm">
-                    <label for="name" class="sr-only">NAME</label>
-                    <input type="text" id="name" placeholder="Name">
-                    <label for="email" class="sr-only">EMAIL ADDRESS</label>
-                    <input type="email" id="email" placeholder="Email">
-                    <label for="message" class="sr-only">MESSAGE</label>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-                    <button>submit</button>
-                </form>                
+                <form action="" method="POST" class="contactForm" name="contactForm">
+                    <div>
+                        <label for="name">NAME</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div>
+                        <label for="email">EMAIL ADDRESS</label>
+                        <input type="email" id="email">
+                    </div>
+                    <div>
+                        <label for="message">MESSAGE</label>
+                        <textarea name="message" id="message" cols="20" rows="6"></textarea>
+                    </div>
+                    <button type="submit">submit</button>
+                </form>
             </div>
         </section>
     </main>
@@ -116,7 +167,7 @@
         <div class="wrapper">
             <p>Built in 2023 by Pam Lu at Juno College</p>
         </div>
-        
     </footer>
 </body>
+
 </html>

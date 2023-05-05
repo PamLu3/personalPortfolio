@@ -1,0 +1,52 @@
+// _typography.scss
+
+@use "variables" as *;
+
+html {
+    font-size: 125%; 
+    font-family: 'Nunito', sans-serif;
+    color: $primaryFontColor;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 28px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 14px;
+}
+
+h4 {
+    font-size: 0.8rem;
+    color: $secondaryBgColor;
+}
+
+p {
+    font-size: 0.8rem;
+    font-weight: normal;
+    line-height: 1rem;
+}
+
+a {
+    font-size: 0.8rem;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+label {
+    font-size: 0.6rem;
+}

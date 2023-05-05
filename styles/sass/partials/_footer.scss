@@ -1,0 +1,9 @@
+// _footer.scss
+
+@use "variables" as *;
+
+footer{
+    background-color: $secondaryBgColor;
+    color: $secondaryFontColor;
+    padding: 1px 0;
+}

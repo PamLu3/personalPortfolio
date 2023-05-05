@@ -1,0 +1,142 @@
+// _main.scss
+@use "variables" as *;
+
+.aboutMe {
+    margin: 60px 0 0 0;
+    padding: 40px 0;
+    background-color: $primaryBgColor;
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .aboutMeImgContainer {
+            width: 25%;
+
+            img {
+                max-width: 100%;
+                border-radius: 50%;
+                vertical-align: middle;
+            }
+        }
+
+        .aboutMeContent {
+            width: 65%;
+        }
+    }
+}
+
+.skills {
+    background-color: $secondaryBgColor;
+    padding: 40px 0;
+    color: $secondaryFontColor;
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .skillsHeading {
+            width: 30%;
+        }
+
+        .skillsList {
+            width: 70%;
+            display: flex;
+            justify-content: space-evenly;
+            line-height: 1.8rem;
+            flex-wrap: wrap;
+            .group3 {
+                min-width: 220px;
+            }
+        }
+    }
+}
+
+.projects {
+    margin-bottom: 40px;
+    h2 {
+        margin: 60px 0 0 0;
+    }
+
+    .project {
+        padding: 30px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .projectImageContainer {
+            width: 40%;
+
+            img {
+                max-width: 100%;
+                display: block;
+                height: auto;
+            }
+        }
+
+        .projectTextContainer {
+            width: 50%;
+            .button {
+                margin-right: 6px;
+            }
+        }
+    }
+}
+
+.contact {
+    background-color: $primaryBgColor;
+    padding: 50px 0;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+
+        .contactText {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            ul,
+            li {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+
+            }
+        }
+
+        .contactForm {
+            font-size: 0.8rem;
+            width: 65%;
+            display: flex;
+            flex-direction: column;
+            div {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+                label {
+                    font-weight: bold;
+                }
+            }
+            button {
+                padding: 4px 26px;
+                width: 5rem;
+            }
+        }
+    }
+
+}

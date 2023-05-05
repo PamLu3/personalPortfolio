@@ -1,0 +1,106 @@
+// _mediaQueries.scss
+
+@media (max-width: 1000px) {
+
+    // all of our styles for smaller DESKTOP devices will go with in this breakpoint
+    .skills {
+        .wrapper {
+            flex-direction: column;
+
+            .skillsHeading {
+                width: 100%;
+            }
+
+            .skillsList {
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+
+    /* all of our styles for TABLET devices will go within this breakpoint */
+    header {
+        flex-direction: column;
+
+        .headerContent,
+        .headerImgContainer {
+            width: 100%;
+        }
+    }
+
+    .aboutMe {
+        .wrapper {
+            flex-direction: column;
+
+            .aboutMeImgContainer {
+                width: 50%;
+                margin-bottom: 40px;
+            }
+
+            .aboutMeContent {
+                width: 100%;
+            }
+        }
+    }
+
+    .projects {
+        .project {
+            flex-direction: column;
+
+            .projectImageContainer,
+            .projectTextContainer {
+                width: 100%;
+                margin: 20px 0;
+            }
+        }
+
+    }
+
+    .contact {
+        .wrapper {
+            flex-direction: column;
+
+            .contactText,
+            .contactForm {
+                width: 100%;
+                margin: 20px 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+
+    /* all of our styles for MOBILE devices will go within this breakpoint */
+    .wrapper {
+        width: 100%;
+    }
+
+    .aboutMe {
+        margin: 0 0 0 0;
+    }
+
+    .skills {
+       
+        .wrapper {
+            .skillsList {
+                flex-direction: column;
+                ul {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .contact {
+        padding: 0;
+    }
+    footer {
+        
+    }
+
+}
