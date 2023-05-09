@@ -282,7 +282,8 @@ label {
   margin: 0 auto;
 }
 
-button, .button {
+button,
+.button {
   background-color: #FBAF01;
   padding: 4px 26px;
   border: 2px solid #FBAF01;
@@ -290,11 +291,31 @@ button, .button {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-button:hover, .button:hover {
+button:hover,
+.button:hover {
   background-color: transparent;
 }
-button:focus, .button:focus {
+button:focus,
+.button:focus {
   background-color: transparent;
+}
+
+a {
+  background-color: transparent;
+}
+a:hover {
+  background-color: #FBAF01;
+  padding: 4px 26px;
+  border: 2px solid #FBAF01;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+a:focus {
+  background-color: #FBAF01;
+  padding: 4px 26px;
+  border: 2px solid #FBAF01;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .navBar {
@@ -568,36 +589,54 @@ footer {
 }
 @media (max-width: 800px) {
   /* all of our styles for TABLET devices will go within this breakpoint */
+  .navBar {
+    margin: 0;
+  }
   .navBar .hidingMenu {
     display: block;
   }
   .navBar .searchMenu {
+    padding: 0;
+    margin: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    height: 200px;
-    position: fixed;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    height: 150px;
+    position: relative;
     top: 0;
-    right: 0;
-    width: 200px;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    right: -250px;
+    width: 150px;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     -webkit-transition: -webkit-transform 250ms ease-in-out;
     transition: -webkit-transform 250ms ease-in-out;
     transition: transform 250ms ease-in-out;
     transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
-    background: #8792f5;
+    border: 1px solid #8792f5;
   }
   .navBar .searchMenu li {
+    margin: 0px;
+    padding: 0.2rem 6px;
+  }
+  .navBar .searchMenu li a:hover {
+    padding: 0 6px;
     margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .navBar .searchMenu li a:focus {
+    padding: 0 6px;
+    margin: 0;
+    width: 100%;
+    height: 100%;
   }
   .navBar input[type=checkbox]:checked ~ #sidebarMenu {
-    -webkit-transform: translateX(200px);
-            transform: translateX(200px);
+    -webkit-transform: translateX(-250px);
+            transform: translateX(-250px);
   }
   .navBar input[type=checkbox] {
     -webkit-transition: all 0.3s;
@@ -616,10 +655,10 @@ footer {
     z-index: 99;
     height: 100%;
     width: 100%;
-    top: 30px;
-    right: 25px;
-    height: 22px;
-    width: 22px;
+    top: 10px;
+    right: 10px;
+    height: 20px;
+    width: 20px;
   }
   .navBar .spinner {
     -webkit-transition: all 0.3s;
